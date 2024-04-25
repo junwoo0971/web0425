@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="g9"><img src="g9.png" alt="g9.png"></a>
+
+            <ul>
+                <li><a href="#">지구</a></li>
+                <li><a href="#">행성</a></li>
+                <li><a href="#">달</a></li>
+                <li><a href="#">태양</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2><br>It's <span>galaxy</span></h2>
+                <p>항성, 밀집성, 성간 물질, 암흑 물질 등이 중력에 의해 묶여져서 이루는 거대한 천체들의 무리이다.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="g9.png" alt="g9" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="g9.png" alt="" onclick="imgSlider('g9.png');
+            changeCircleColor('#66A1FF')"></li>
+            <li><img src="달.png" alt="" onclick="imgSlider('달.png');
+            changeCircleColor('#BCBCBC')"></li>
+            <li><img src="선샤인.png" alt="" onclick="imgSlider('선샤인.png');
+            changeCircleColor('#FF6E6E')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="행성1-1.png" alt=""></a></li>
+            <li><a href="#"><img src="행성2-2.png" alt=""></a></li>
+            <li><a href="#"><img src="행성3-3.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything
+        }
+        function changeCircleColor (color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
